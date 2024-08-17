@@ -1,6 +1,18 @@
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 /* shared-styles */
 .orange {
   color: #fd6e0a;
+}
+.secondary-bg{
+  background-color: #FFF8F3;
+  /* background-color: bisque; */
 }
 
 .gray{
@@ -167,22 +179,104 @@ main section{
 
 /* footer styles */
 footer{
+  /* overall footer margin dite parbo na, but padding dibo */
     padding: 130px 230px;
     display: flex;
     gap: 100px;
+    border: 3px solid black;
 }
 .footer-column{
-    width: 50%;
+  border: 3px solid hotpink;
+  width: 50%;
+    
 }
 
-footer input[type="text"],  footer input[type="email"], footer textarea{
+footer input[type="text"], footer input[type="email"], footer textarea{
     height: 64px;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: white;
     display: block;
+    /* border:1px solid blue ; */
     width: 100%;
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+  .skills-container, 
+  .resume-container, 
+  .banner,
+  footer, 
+  nav, 
+  nav > ul,
+  .about-items{
+      flex-direction: column;
+  }
+
+  nav > ul{
+      gap: 20px;
+  }
+
+  .btn-primary{
+      margin-bottom: 20px;
+  }
+
+  .banner {
+      margin: 20px;
+  }
+
+  .banner-profile-pic{
+      width: 100%;
+  }
+
+  .header{
+      background-image: none;
+  }
+
+  footer, .about{
+      padding: 20px;
+  }
+
+  .footer-column{
+      width: 100%;
+  }
+
+  footer input[type="text"],  
+  footer input[type="email"], 
+  footer textarea{
+      width: calc(100% - 40px);
+  }
+}
+
+/* tablet specific media query */
+@media screen and (min-width: 576px) and (max-width:990px) {
+  .banner{
+      flex-direction: column;
+  }
+}

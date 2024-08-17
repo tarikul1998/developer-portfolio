@@ -5,10 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="open-sans-normal">
     <header class="header">
         <nav>
             <h3 class="nav-title">Ma<span class="orange">r</span>y</h3>
@@ -28,15 +31,15 @@
                     Shot what able cold new see hold.Friendly as an betrayed formerly
                     he. Morning because as to society behaved moments.
                 </p>
-                <button class="btn-orange">Download CV</button>
-                <button class="btn-orange">Contact</button>
+                <button class="btn-orange"> <i class="fa-solid fa-download"></i> Download CV</button>
+                <button class="btn-orange"> <i class="fa-solid fa-phone"></i> Contact</button>
             </div>
 
             <img class="banner-profile-image" src="images/hardy.png" alt="" />
         </section>
     </header>
 
-    <main>
+<main>
         <section class="about main-bg">
             <h3 class="section-title">About Me</h3>
             <p class="section-description">
@@ -66,7 +69,7 @@
             </div>
         </section>
 
-<section class="skills">
+       <section class="skills">
             <h3 class="section-title text-center">What I do</h3>
             <p class="section-description text-center">
                 I have more than 10 years experience building software for clients all
@@ -167,13 +170,13 @@
                 
         </div>
             <div class="text-center resume-download-cv">
-                <button class="btn-orange"><i class="fa-solid fa-download"></i> Download CV</button>
+                <button class="btn-orange"> <i class="fa-solid fa-download"></i> Download CV</button>
             </div>
         </section>
-</section>
+      </section>
 </main>
 
-<footer class="secondary-bg">
+<footer>
     <div class="footer-column">
         <h3 class="section-title">Lets Connect</h3>
         <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Sunday through Thursday.</p>
@@ -186,10 +189,12 @@
     <div class="footer-column">
         <h3 class="section-title">Let’s Inbox me</h3>
         <form action="">
+           
             <input type="text" name="" id="" placeholder="Your Name">
             <input type="email" name="" id="" placeholder="Your Email">
             <textarea name="" id="" cols="30" rows="20" placeholder="Message"></textarea>
-            <input class="btn-primary" type="submit" value="Submit">
+            <input class="btn-orange" type="submit" value="Submit Here">
+        
         </form>
     </div>
 </footer>
